@@ -1,97 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfilo</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfilo</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 
-    <nav>
-        <div class="profile">
-            <img src="profil.jpg">
-            <h1>Marwen Maliou</h1>
-             
-        </div>
-        <div class="barre">
-          <ul>
-              <li>Facebook</li>
-              <li>Linkedin</li>
-              <li>Curriculuim</li>
-              <li>Mes Projet</li>
-          </ul>
-        </div>
-    </nav>
+  <nav>
+    <div class="profile">
+      <img src="profil.jpg" alt="Photo de profil de Marwen Maliou" />
+      <h1>Marwen Maliou</h1>
+    </div>
+    <div class="barre">
+      <ul>
+        <li><a href="#facebook">Facebook</a></li>
+        <li><a href="#linkedin">LinkedIn</a></li>
+        <li><a href="#curriculum">Curriculum</a></li>
+        <li><a href="#projets">Mes Projets</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <section class="page-content">
-        <header>
-            <h1>Hi i am a future full stack web develeper.</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus voluptas optio. Impedit totam iure quae quaerat architecto. Reiciendis sed praesentium, accusamus atque numquam cumque quidem nobis minus ipsum eligendi?
-            </p>
-            <button>contacter moi</button>
+  <section class="page-content">
+    <header>
+      <h1>Hi, I am a future Full Stack Web Developer.</h1>
+      <p>
+        I am passionate about building dynamic and responsive web applications.
+        With a solid foundation in both front-end and back-end development,
+        I strive to create seamless digital experiences that combine clean design with powerful functionality.
+      </p>
+      <button onclick="location.href='#contact'">Contacter moi</button>
+    </header>
 
-        </header>
-
-        <section class="image1">
-                <img src="image1.png">
-        </section>
-
-
-
-
-        <section class="competence1">
-                <h1>competence</h1>
-                <div class="competence2">
-                    <div class="competence">
-                      <h4 class="titre">HTML</h4>
-                      <p class="descreption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi dolores id hic alias, sit eaque mollitia quia in nulla blanditiis optio laboriosam ipsam voluptates facilis? Non obcaecati eaque voluptates ea!</p>
-                    </div>
-                      <div class="competence">
-                      <h4 class="titre">CSS</h4>
-                      <p class="descreption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt earum, quam beatae aspernatur laboriosam maiores rerum reprehenderit facilis molestiae magni at doloribus optio fugit distinctio, quo harum repellat vero.</p>
-                    </div>
-                      <div class="competence">
-                      <h4 class="titre">BOOTSTRAP</h4>
-                      <p class="descreption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt earum, quam beatae aspernatur laboriosam maiores rerum reprehenderit facilis molestiae magni at doloribus optio fugit distinctio, quo harum repellat vero.</p>
-                    </div>
-                      <div class="competence">
-                      <h4 class="titre">JAVA SCRIPT</h4>
-                      <p class="descreption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deserunt earum, quam beatae aspernatur laboriosam maiores rerum reprehenderit facilis molestiae magni at doloribus optio fugit distinctio, quo harum repellat vero.</p>
-                    </div>
-                </div>
-
-        </section>
-
+    <section class="image1">
+      <img src="image1.png" alt="Illustration développement web" />
     </section>
 
-    <footer>
-        <div class="colonne">
-            <h3>Mes services</h3>
-                <p>Devolopement Front End</p>
-                <p>Devolopement Back End</p>
-                <p>Full Web Testing</p>
-            
+    <section class="competence1" id="curriculum">
+      <h1>Compétences</h1>
+      <div class="competence2">
+        <div class="competence">
+          <h4 class="titre">HTML</h4>
+          <p class="descreption">Maîtrise des bases de la structure web grâce à HTML5.
+            Création de pages accessibles,
+            bien organisées et compatibles avec tous les navigateurs modernes.</p>
         </div>
-        <div class="colonne">
-            <h3>Mes Certification</h3>
-               <p>HTML</p>
-               <p>CSS</p>
-               <p>Java Script</p>
-               <p>Istqb</p>
-            
+        <div class="competence">
+          <h4 class="titre">CSS</h4>
+          <p class="descreption">Expérience dans la mise en forme des pages avec CSS3 : design responsive,
+            animations simples, et adaptation aux différentes tailles d’écran.</p>
         </div>
-        <div class="colonne">
-            <h3>Mes Contacts</h3>
-               <p>maliou.job@gmail.com</p>
-               <p>Tel 97 573 264</p>
-               <p>adresse : riadh city ... </p>
-
+        <div class="competence">
+          <h4 class="titre">BOOTSTRAP</h4>
+          <p class="descreption">Utilisation efficace du framework Bootstrap pour accélérer le développement, 
+            garantir un rendu propre et responsive sur tous les appareils.</p>
         </div>
+        <div class="competence">
+          <h4 class="titre">JAVA SCRIPT</h4>
+          <p class="descreption">Bases solides en JavaScript : manipulation du DOM, gestion des événements, 
+            logique de base et interaction dynamique avec l'utilisateur.</p>
+        </div>
+      </div>
+    </section>
 
+    <section id="projets">
+      <h2>Mes Projets</h2>
+      <p>Ici, vous pouvez ajouter une section dédiée à vos projets réalisés.</p>
+    </section>
 
-    </footer>
+    <section id="facebook">
+      <h2>Facebook</h2>
+      <p>Ajoutez un lien vers votre page Facebook ici.</p>
+    </section>
+
+    <section id="linkedin">
+      <h2>LinkedIn</h2>
+      <p>Ajoutez un lien vers votre profil LinkedIn ici.</p>
+    </section>
+
+  </section>
+
+  <footer id="contact">
+    <div class="colonne">
+      <h3>Mes services</h3>
+      <p>Développement Front-End</p>
+      <p>Développement Back-End</p>
+      <p>Tests Web Complets</p>
+    </div>
+    <div class="colonne">
+      <h3>Mes Certifications</h3>
+      <p>HTML</p>
+      <p>CSS</p>
+      <p>JavaScript</p>
+      <p>ISTQB</p>
+    </div>
+    <div class="colonne">
+      <h3>Mes Contacts</h3>
+      <p>Email : <a href="mailto:maliou.job@gmail.com">maliou.job@gmail.com</a></p>
+      <p>Tél : 97 573 264</p>
+      <p>Adresse : Riadh City ...</p>
+    </div>
+  </footer>
+
 </body>
 </html>
