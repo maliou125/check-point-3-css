@@ -1,25 +1,24 @@
-body{
-    padding:  2%;
+body {
+    padding: 2%;
     margin: 0;
     font-family: "Roboto", sans-serif;
-    
+    background-color: #f9f9f9;
 }
-.barre {
-    margin: 5px;
-   
-}
+
+/* NAVIGATION */
 nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    position: static;
     background-color: rgb(7, 114, 153);
-    top: 0;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 59px;
+    padding: 10px 20px;
+    color: white;
 }
-nav .profile{
+
+nav .profile {
     display: flex;
     align-items: center;
 }
@@ -27,122 +26,197 @@ nav .profile{
 nav .profile img {
     width: 60px;
     height: 60px;
-    border-radius: 52%;
+    border-radius: 50%;
+    object-fit: cover;
 }
+
 nav .profile h1 {
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 18px;
+}
+
+.barre {
+    margin: 5px;
+    
+}
+
+.barre a {
+    text-decoration: none; 
+    color: white;           
 }
 
 nav ul {
     display: flex;
-    list-style-type: none;
-
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
 }
 
 nav ul li {
     margin-left: 20px;
     cursor: pointer;
-    font: bolder ;
-}
-nav ul li:hover {
-    border-bottom-color:black ;
-}
-
-
-
-
-.page-content {
-    margin: 4%;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
     
 }
+
+
+nav ul li:hover {
+    color: #ffd700;
+}
+
+nav ul li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: white;
+    width: 0;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+/* CONTENU PRINCIPAL */
+.page-content {
+    margin: 4%;
+}
+
 .page-content header {
     margin-top: 5%;
     max-width: 70%;
-    
 }
+
 .page-content header h1 {
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 5vw;
-}
-.page-content header p {
-    line-height: 30px;
-    color: #818181;
-}
-.page-content header button {
-    background-color: inherit;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    font-size: 15px;
-    font-weight: bold;
-    border-bottom: 1px solid gray;
+    color: #07486b;
 }
 
+.page-content header p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.page-content header button {
+    background-color: #077299;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page-content header button:hover {
+    background-color: #05587a;
+}
+
+/* IMAGE */
 .page-content .image1 {
-    margin: 5px;
+    margin: 30px 0;
 }
 
 .page-content .image1 img {
     max-width: 100%;
     height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
+/* COMPÉTENCES */
 .page-content .competence1 {
     margin-top: 6%;
 }
 
 .page-content .competence1 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 6%;
     text-transform: uppercase;
-    font-size: 3vw;
-    
+    font-size: 2.5vw;
+    color: #07486b;
+    margin-bottom: 20px;
 }
-
 
 .page-content .competence1 .competence2 {
     display: flex;
-    
-}
-.page-content .competence1 .competence2 .competence {
-    display: flex;
-    margin-right: 20px;
-    flex-wrap: wrap; 
-   
-}
-
-.page-content .competence1 .competence2 .competence h4 {
-    margin: 0;
-    display: flex;
     flex-wrap: wrap;
-}
-.page-content .competence1 .competence2 .competence .desctiption{
-   font-size: 10px; 
-   justify-self: start;
+    gap: 20px;
 }
 
-footer{
+.page-content .competence1 .competence2 .competence {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+.page-content .competence1 .competence2 .competence h4.titre {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #05587a;
+}
+
+.page-content .competence1 .competence2 .competence .descreption {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
     margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: black;
     color: white;
-    padding: 10px;
-
+    padding: 30px 20px;
 }
 
-footer .colonne p {
-    font-size: 12px;
-    color: #ccc;
-    cursor: pointer;
-}
-
-footer .colonne p:hover{
+footer .colonne h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
     color: #fff;
 }
 
+footer .colonne p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: color 0.2s;
+}
 
+footer .colonne p:hover {
+    color: #fff;
+}
+
+/* RÉPONSIVE */
+@media screen and (max-width: 768px) {
+    nav, footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-content header {
+        max-width: 100%;
+    }
+
+    .page-content .competence1 .competence2 {
+        flex-direction: column;
+    }
+}
